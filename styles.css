@@ -204,3 +204,9 @@ code, pre, .font-mono {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* SVG Icons Consistency */
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
