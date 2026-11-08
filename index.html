@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Septa Puma Surya, S.Tr.Kom. | Full-Stack & Intelligent Systems Engineer</title>
+  <meta name="description" content="Portfolio resmi Septa Puma Surya, S.Tr.Kom. - Lulusan D-IV Teknik Informatika Politeknik Negeri Malang yang berfokus pada Full-Stack Web & Mobile, IoT Real-Time Systems, dan Machine Learning.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: '#090a0f',
+            card: '#0f1420',
+            cardHover: '#161e31',
+            cyanAccent: '#06b6d4',
+            emeraldAccent: '#10b981',
+            purpleAccent: '#8b5cf6'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#090a0f] text-slate-100 min-h-screen relative bg-grid-pattern selection:bg-cyan-500/30 selection:text-cyan-200">
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
+
+  <!-- ========================================== -->
+  <!-- NAVBAR -->
+  <!-- ========================================== -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#090a0f]/80 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-500 p-[1.5px] transition-transform group-hover:scale-105">
+          <div class="w-full h-full bg-[#090a0f] rounded-[10px] flex items-center justify-center font-mono font-bold text-cyan-400 text-sm">
+            SP
+          </div>
+        </div>
+        <span class="font-bold tracking-tight text-white group-hover:text-cyan-400 transition-colors">
+          Septa Puma Surya<span class="text-cyan-400 font-mono text-xs ml-1 px-1.5 py-0.5 rounded bg-cyan-950/80 border border-cyan-800/60">S.Tr.Kom</span>
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-cyan-400 transition-colors">Tentang</a>
+        <a href="#projects" class="hover:text-cyan-400 transition-colors">Proyek & Riset</a>
+        <a href="#skills" class="hover:text-cyan-400 transition-colors">Keahlian</a>
+        <a href="#experience" class="hover:text-cyan-400 transition-colors">Pengalaman</a>
+        <a href="#contact" class="hover:text-cyan-400 transition-colors">Kontak</a>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="https://github.com/RollinPumpkin" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-white hover:bg-white/10 transition-colors" title="GitHub Profile">
+          <i data-lucide="github" class="w-4 h-4"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/septapumasurya/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-white hover:bg-white/10 transition-colors" title="LinkedIn Profile">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+        </a>
+        <a href="https://bit.ly/4BQd3Kx" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 font-semibold text-xs tracking-wider uppercase hover:opacity-95 transition-all flex items-center gap-2 shadow-lg shadow-cyan-500/20">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i>
+          <span>Unduh CV</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg bg-white/5 border border-white/10 text-slate-300">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Dropdown -->
+    <div id="mobileNav" class="hidden md:hidden bg-[#0c101d] border-b border-white/10 px-6 py-4 flex flex-col gap-3 text-sm">
+      <a href="#about" class="py-2 text-slate-300 hover:text-cyan-400">Tentang</a>
+      <a href="#projects" class="py-2 text-slate-300 hover:text-cyan-400">Proyek & Riset</a>
+      <a href="#skills" class="py-2 text-slate-300 hover:text-cyan-400">Keahlian</a>
+      <a href="#experience" class="py-2 text-slate-300 hover:text-cyan-400">Pengalaman</a>
+      <a href="#contact" class="py-2 text-slate-300 hover:text-cyan-400">Kontak</a>
+      <div class="pt-2 flex items-center gap-3 border-t border-white/10">
+        <a href="https://bit.ly/4BQd3Kx" target="_blank" class="w-full text-center py-2.5 rounded-lg bg-cyan-500 text-slate-950 font-semibold text-xs uppercase">
+          Unduh CV Lengkap
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================== -->
+  <!-- MAIN CONTENT CONTAINER -->
+  <!-- ========================================== -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 relative z-10 space-y-16">
+
+    <!-- HERO SECTION & BENTO OVERVIEW -->
+    <section id="about" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+      
+      <!-- Main Intro Card (Col 8) -->
+      <div class="lg:col-span-8 bento-card p-8 sm:p-10 flex flex-col justify-between relative">
+        <div class="space-y-6">
+          <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
+            <span class="pulse-dot"></span>
+            <span>Available for Software Engineering & Data Roles</span>
+          </div>
+
+          <div class="space-y-2">
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+              Hai, Saya <span class="text-gradient-cyan">Septa Puma Surya</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-400 font-medium">
+              Sarjana Terapan Komputer (S.Tr.Kom) • D-IV Teknik Informatika, Politeknik Negeri Malang
+            </p>
+          </div>
+
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+            Software Engineer & periset sistem cerdas yang mengintegrasikan rekayasa <span class="text-cyan-400 font-semibold">Full-Stack Web & Mobile modern</span> dengan aliran data waktu nyata <span class="text-emerald-400 font-semibold">Internet of Things (IoT)</span> dan permodelan prediktif <span class="text-purple-400 font-semibold">Machine Learning</span>. Terbiasa memimpin perancangan sistem secara menyeluruh dari analisis kebutuhan stakeholder hingga implementasi produksi.
+          </p>
+        </div>
+
+        <div class="pt-8 flex flex-wrap items-center gap-4">
+          <a href="#projects" class="px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-sm transition-all flex items-center gap-2 shadow-lg shadow-cyan-500/25">
+            <span>Jelajahi Proyek</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <button id="copyEmailBtn" class="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 font-medium text-sm transition-all flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i>
+            <span>Salin Email</span>
+          </button>
+          <a href="https://github.com/RollinPumpkin" target="_blank" class="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 font-medium text-sm transition-all flex items-center gap-2">
+            <i data-lucide="github" class="w-4 h-4 text-slate-400"></i>
+            <span>GitHub Profile</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Stats & Highlights (Col 4) -->
+      <div class="lg:col-span-4 grid grid-cols-2 lg:grid-cols-1 gap-6">
+        
+        <!-- Stat Card 1 -->
+        <div class="bento-card p-6 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-mono font-bold text-white">~85 ms</div>
+            <div class="text-xs text-slate-400">End-to-End WebSocket Latency</div>
+          </div>
+        </div>
+
+        <!-- Stat Card 2 -->
+        <div class="bento-card p-6 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
+            <i data-lucide="activity" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-mono font-bold text-white">9 Kanal</div>
+            <div class="text-xs text-slate-400">Sensor Telemetri Simultan</div>
+          </div>
+        </div>
+
+        <!-- Stat Card 3 -->
+        <div class="bento-card p-6 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+            <i data-lucide="award" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-mono font-bold text-white">3.54 / 4.0</div>
+            <div class="text-xs text-slate-400">IPK Kelulusan Polinema</div>
+          </div>
+        </div>
+
+        <!-- Stat Card 4 -->
+        <div class="bento-card p-6 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+            <i data-lucide="clock" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <div class="text-2xl sm:text-3xl font-mono font-bold text-white">2 Tahun</div>
+            <div class="text-xs text-slate-400">Akselerasi SMA (SMAN 1 Talun)</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CROWN JEWEL: LEAKGUARD & LIVE SIMULATOR -->
+    <!-- ========================================== -->
+    <section id="featured-research" class="space-y-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest font-semibold">Undergraduate Thesis & Research Capstone</div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white">LeakGuard Monitoring System</h2>
+        </div>
+        <a href="https://github.com/RollinPumpkin/LeakGuard-Monitoring-System" target="_blank" class="inline-flex items-center gap-2 text-sm text-cyan-400 hover:text-cyan-300 font-medium">
+          <span>Lihat Repositori di GitHub</span>
+          <i data-lucide="external-link" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        
+        <!-- Left: System Architecture Details (Col 7) -->
+        <div class="lg:col-span-7 bento-card p-8 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex flex-wrap gap-2">
+              <span class="tech-tag text-cyan-300 bg-cyan-950/40 border-cyan-800"><i data-lucide="layers" class="w-3 h-3"></i> Microservices</span>
+              <span class="tech-tag">Next.js 16 (React 19)</span>
+              <span class="tech-tag">FastAPI (Python)</span>
+              <span class="tech-tag">Supabase Realtime</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Random Forest</span>
+              <span class="tech-tag">ESP32 IoT</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-white">
+              Sistem Pemantauan Kebocoran Arus Transformator Multichannel untuk Predictive Maintenance (PLN)
+            </h3>
+
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Arsitektur terpisah antara antarmuka web modern dengan layanan kecerdasan buatan. Mengalirkan data 9 kanal sensor kelistrikan secara real-time via WebSocket dengan latensi ~85 ms dan zero packet loss. Dilengkapi model Random Forest untuk peramalan deret waktu 24 jam (12-hour sliding window) serta rekomendasi mitigasi fisik otomatis guna mencegah loncatan api (*flashover*).
+            </p>
+
+            <!-- Metrics Grid -->
+            <div class="grid grid-cols-3 gap-3 pt-2">
+              <div class="p-3 rounded-xl bg-white/5 border border-white/5 text-center">
+                <div class="text-xs text-slate-400">Latensi Transmisi</div>
+                <div class="text-lg font-mono font-bold text-emerald-400">~85 ms</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/5 border border-white/5 text-center">
+                <div class="text-xs text-slate-400">Deviasi RMSE</div>
+                <div class="text-lg font-mono font-bold text-cyan-400">80.45 mA</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/5 border border-white/5 text-center">
+                <div class="text-xs text-slate-400">Data Loss</div>
+                <div class="text-lg font-mono font-bold text-purple-400">0% Loss</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-6 border-t border-white/10 mt-6 flex items-center justify-between text-xs text-slate-400">
+            <span>Diformulasikan dalam naskah ilmiah IEEE GEMASTIK</span>
+            <span class="font-mono text-cyan-400">PLN Distribution Study</span>
+          </div>
+        </div>
+
+        <!-- Right: Interactive IoT Telemetry Simulator (Col 5) -->
+        <div class="lg:col-span-5 bento-card p-6 flex flex-col justify-between bg-gradient-to-b from-[#0f1420] to-[#090d16]">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-300">Live Telemetry Simulator</span>
+              </div>
+              <span id="mlStatusBadge" class="text-xs px-2.5 py-1 rounded-full font-mono font-semibold border bg-emerald-500/20 text-emerald-400 border-emerald-500/30">
+                NORMAL
+              </span>
+            </div>
+
+            <!-- Waveform Canvas -->
+            <div class="w-full bg-slate-950/80 rounded-xl border border-white/10 p-2 overflow-hidden relative">
+              <canvas id="telemetryCanvas" class="w-full block"></canvas>
+              <div class="absolute bottom-2 right-3 flex items-center gap-3 text-[10px] font-mono">
+                <span class="text-cyan-400 flex items-center gap-1"><span class="w-2 h-0.5 bg-cyan-400"></span> Fasa R</span>
+                <span class="text-amber-400 flex items-center gap-1"><span class="w-2 h-0.5 bg-amber-400"></span> Fasa S</span>
+                <span class="text-purple-400 flex items-center gap-1"><span class="w-2 h-0.5 bg-purple-400"></span> Fasa T</span>
+              </div>
+            </div>
+
+            <!-- Realtime Values Readout -->
+            <div class="grid grid-cols-3 gap-2 text-center font-mono">
+              <div class="p-2 rounded-lg bg-white/5 border border-white/5">
+                <div class="text-[10px] text-slate-400">IR (Avg)</div>
+                <div id="valCurrentR" class="text-sm font-bold text-cyan-400">38.2 mA</div>
+              </div>
+              <div class="p-2 rounded-lg bg-white/5 border border-white/5">
+                <div class="text-[10px] text-slate-400">IS (Avg)</div>
+                <div id="valCurrentS" class="text-sm font-bold text-amber-400">42.1 mA</div>
+              </div>
+              <div class="p-2 rounded-lg bg-white/5 border border-white/5">
+                <div class="text-[10px] text-slate-400">IT (Avg)</div>
+                <div id="valCurrentT" class="text-sm font-bold text-purple-400">35.4 mA</div>
+              </div>
+            </div>
+
+            <!-- Simulation Controls -->
+            <div class="space-y-1.5">
+              <div class="text-[11px] text-slate-400 font-medium">Uji Respon Algoritma AI terhadap Skenario Beban:</div>
+              <div class="grid grid-cols-3 gap-2">
+                <button id="btnSimNormal" class="py-1.5 px-2 rounded-lg text-xs font-mono font-medium border bg-sky-500/30 border-sky-400 text-sky-300 transition-all hover:bg-sky-500/20">
+                  Normal
+                </button>
+                <button id="btnSimWarning" class="py-1.5 px-2 rounded-lg text-xs font-mono font-medium border border-white/10 text-slate-300 hover:border-amber-400 hover:text-amber-300 transition-all">
+                  Beban Naik
+                </button>
+                <button id="btnSimCritical" class="py-1.5 px-2 rounded-lg text-xs font-mono font-medium border border-white/10 text-slate-300 hover:border-rose-400 hover:text-rose-300 transition-all">
+                  Spike Bocor
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ML Action Advisory -->
+          <div class="mt-4 p-3 rounded-xl bg-slate-950/60 border border-white/5 text-xs text-slate-300 flex items-start gap-2.5">
+            <i data-lucide="cpu" class="w-4 h-4 text-cyan-400 shrink-0 mt-0.5"></i>
+            <div>
+              <span class="font-semibold text-white">AI Diagnostic Advisory:</span>
+              <p id="mlStatusText" class="text-slate-400 mt-0.5">Semua fasa seimbang. Arus bocor isolator &lt; 50 mA (Aman).</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- INDUSTRIAL MAGANG EXPERIENCE SHOWCASE -->
+    <!-- ========================================== -->
+    <section class="space-y-6">
+      <div class="bento-card p-8 sm:p-10 border-l-4 border-l-cyan-500 relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-8 space-y-4">
+            <div class="flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest font-semibold">
+              <i data-lucide="briefcase" class="w-4 h-4"></i>
+              <span>Pengalaman Magang Industri • Juli – Desember 2025</span>
+            </div>
+
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+              BPR Absence Management System & CreditCalc
+            </h3>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Bertindak sebagai <strong>Mobile App Developer (Tim 911)</strong> di <strong>PT BPR Adiartha Reksacitra</strong>. Merancang dan mengimplementasikan aplikasi presensi dan manajemen tugas operasional perbankan berbasis Flutter, verifikasi lokasi <em>GPS Geofencing</em>, dan deteksi swafoto. Mengintegrasikan Firebase untuk autentikasi dan push notifikasi, serta menyusun <em>User Guidebook</em> sistem setebal 300+ halaman.
+            </p>
+
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase Cloud</span>
+              <span class="tech-tag">GPS Geofencing</span>
+              <span class="tech-tag">RBAC Multilevel</span>
+              <span class="tech-tag">Laravel/Blade (CreditCalc)</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col gap-3">
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1">
+              <div class="text-xs text-slate-400">Dokumentasi & Standar Perbankan</div>
+              <div class="text-lg font-bold text-white">300+ Halaman User Guidebook</div>
+              <div class="text-xs text-slate-400">Diseminasi & Pelatihan Manajemen</div>
+            </div>
+            <div class="flex items-center gap-3">
+              <a href="https://github.com/RollinPumpkin/BPR_Absence" target="_blank" class="flex-1 py-2.5 px-4 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-400 text-xs font-semibold text-center transition-all flex items-center justify-center gap-1.5">
+                <i data-lucide="github" class="w-3.5 h-3.5"></i>
+                <span>Repo BPR_Absence</span>
+              </a>
+              <a href="https://github.com/RollinPumpkin/CreditCalc" target="_blank" class="flex-1 py-2.5 px-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-300 text-xs font-semibold text-center transition-all flex items-center justify-center gap-1.5">
+                <i data-lucide="github" class="w-3.5 h-3.5"></i>
+                <span>CreditCalc</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- ALL PROJECTS FILTERABLE GRID -->
+    <!-- ========================================== -->
+    <section id="projects" class="space-y-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest font-semibold">Portofolio Kode & Solusi Digital</div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Daftar Proyek Unggulan</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2 text-xs font-medium">
+          <button class="filter-btn py-1.5 px-3 rounded-lg bg-sky-500 text-white font-medium transition-all" data-filter="all">Semua</button>
+          <button class="filter-btn py-1.5 px-3 rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-white transition-all" data-filter="fullstack">Full-Stack Web</button>
+          <button class="filter-btn py-1.5 px-3 rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-white transition-all" data-filter="mobile">Mobile Apps</button>
+          <button class="filter-btn py-1.5 px-3 rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-white transition-all" data-filter="ai">Machine Learning</button>
+          <button class="filter-btn py-1.5 px-3 rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-white transition-all" data-filter="iot">IoT & Hardware</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Project 1: LeakGuard -->
+        <div class="bento-card p-6 flex flex-col justify-between project-item" data-category="fullstack ai iot">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-cyan-400 font-semibold">Tugas Akhir S.Tr.Kom</span>
+              <span>2026</span>
+            </div>
+            <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition-colors">
+              LeakGuard Monitoring System
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Dashboard monitoring arus bocor transformator berbasis Next.js 16, FastAPI, Supabase Realtime WebSocket, dan Random Forest 24h forecasting.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="tech-tag">Next.js 16</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">Random Forest</span>
+            </div>
+          </div>
+          <div class="pt-5 mt-4 border-t border-white/10 flex items-center justify-between">
+            <a href="https://github.com/RollinPumpkin/LeakGuard-Monitoring-System" target="_blank" class="text-xs text-cyan-400 hover:underline flex items-center gap-1 font-medium">
+              <span>Buka Kode Repositori</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: BPR Absence -->
+        <div class="bento-card p-6 flex flex-col justify-between project-item" data-category="mobile">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-emerald-400 font-semibold">Magang Industri BPR</span>
+              <span>2025</span>
+            </div>
+            <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition-colors">
+              BPR Absence Management
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Aplikasi mobile presensi karyawan perbankan dengan validasi lokasi radius GPS (Geofencing), verifikasi kamera selfie, dan approval cuti bertingkat.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">GPS Geofence</span>
+            </div>
+          </div>
+          <div class="pt-5 mt-4 border-t border-white/10 flex items-center justify-between">
+            <a href="https://github.com/RollinPumpkin/BPR_Absence" target="_blank" class="text-xs text-cyan-400 hover:underline flex items-center gap-1 font-medium">
+              <span>Buka Kode Repositori</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: Filmify -->
+        <div class="bento-card p-6 flex flex-col justify-between project-item" data-category="mobile ai">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-purple-400 font-semibold">AI & Computer Vision</span>
+              <span>2024</span>
+            </div>
+            <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition-colors">
+              Filmify - Emotion Recommender
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Aplikasi mobile cerdas yang merekomendasikan film dan serial TV berdasarkan deteksi ekspresi emosi wajah pengguna menggunakan Machine Learning.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="tech-tag">Mobile App</span>
+              <span class="tech-tag">Computer Vision</span>
+              <span class="tech-tag">Emotion Detection</span>
+            </div>
+          </div>
+          <div class="pt-5 mt-4 border-t border-white/10 flex items-center justify-between">
+            <a href="https://github.com/RollinPumpkin/Filmify" target="_blank" class="text-xs text-cyan-400 hover:underline flex items-center gap-1 font-medium">
+              <span>Buka Kode Repositori</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: CreditCalc -->
+        <div class="bento-card p-6 flex flex-col justify-between project-item" data-category="fullstack">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-amber-400 font-semibold">Financial Tool</span>
+              <span>2025</span>
+            </div>
+            <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition-colors">
+              CreditCalc BPR
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Kalkulator simulasi pinjaman kredit nasabah perbankan dengan kalkulasi bunga efektif dan anuitas serta pencetakan tabel angsuran.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">Blade</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Fintech</span>
+            </div>
+          </div>
+          <div class="pt-5 mt-4 border-t border-white/10 flex items-center justify-between">
+            <a href="https://github.com/RollinPumpkin/CreditCalc" target="_blank" class="text-xs text-cyan-400 hover:underline flex items-center gap-1 font-medium">
+              <span>Buka Kode Repositori</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 5: Sistem Bansos RW 09 -->
+        <div class="bento-card p-6 flex flex-col justify-between project-item" data-category="fullstack">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-cyan-400 font-semibold">Community Impact</span>
+              <span>2023 – 2024</span>
+            </div>
+            <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition-colors">
+              Sistem Informasi Bansos RW 09
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Portal pendataan dan transparansi penyaluran bantuan sosial bagi warga RW 09 Blimbing, Malang dengan hak akses pengguna dan rekam audit transparan.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="tech-tag">Full-Stack Web</span>
+              <span class="tech-tag">System Analysis</span>
+              <span class="tech-tag">RBAC</span>
+            </div>
+          </div>
+          <div class="pt-5 mt-4 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+            <span>Kolaborasi Stakeholder Warga</span>
+          </div>
+        </div>
+
+        <!-- Project 6: SPK ARAS CI3 -->
+        <div class="bento-card p-6 flex flex-col justify-between project-item" data-category="fullstack ai">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between text-xs text-slate-400">
+              <span class="font-mono text-purple-400 font-semibold">Decision Support System</span>
+              <span>2024</span>
+            </div>
+            <h3 class="text-lg font-bold text-white hover:text-cyan-400 transition-colors">
+              Sistem Pendukung Keputusan (ARAS)
+            </h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Implementasi algoritma Multi-Criteria Decision Making metode Additive Ratio Assessment (ARAS) untuk perangkingan alternatif keputusan objektif.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-2">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">CodeIgniter 3</span>
+              <span class="tech-tag">ARAS Algorithm</span>
+            </div>
+          </div>
+          <div class="pt-5 mt-4 border-t border-white/10 flex items-center justify-between">
+            <a href="https://github.com/RollinPumpkin/SPK_ARAS_CI3_PLS" target="_blank" class="text-xs text-cyan-400 hover:underline flex items-center gap-1 font-medium">
+              <span>Buka Kode Repositori</span>
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TECHNICAL SKILLS BENTO MATRIX -->
+    <!-- ========================================== -->
+    <section id="skills" class="space-y-8">
+      <div>
+        <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest font-semibold">Penguasaan Perangkat Lunak & Teknologi</div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Technical Arsenal</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Category 1: Languages & Core -->
+        <div class="bento-card p-6 space-y-4">
+          <div class="flex items-center gap-2 text-cyan-400 font-bold text-sm">
+            <i data-lucide="code-2" class="w-4 h-4"></i>
+            <span>Languages</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">C (Dicoding Cert)</span>
+            <span class="tech-tag">Java (Dicoding Cert)</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Frontend & Mobile -->
+        <div class="bento-card p-6 space-y-4">
+          <div class="flex items-center gap-2 text-emerald-400 font-bold text-sm">
+            <i data-lucide="layout" class="w-4 h-4"></i>
+            <span>Frontend & Mobile</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-tag">Next.js 16 (App Router)</span>
+            <span class="tech-tag">React 19</span>
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Tailwind CSS v4</span>
+            <span class="tech-tag">Recharts</span>
+            <span class="tech-tag">HTML5 / CSS3</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Backend & Data -->
+        <div class="bento-card p-6 space-y-4">
+          <div class="flex items-center gap-2 text-purple-400 font-bold text-sm">
+            <i data-lucide="database" class="w-4 h-4"></i>
+            <span>Backend, Cloud & DB</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Supabase Realtime</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Firebase Firestore</span>
+            <span class="tech-tag">RESTful API</span>
+            <span class="tech-tag">WebSocket Protocol</span>
+          </div>
+        </div>
+
+        <!-- Category 4: AI, IoT & Methods -->
+        <div class="bento-card p-6 space-y-4">
+          <div class="flex items-center gap-2 text-amber-400 font-bold text-sm">
+            <i data-lucide="cpu" class="w-4 h-4"></i>
+            <span>AI, IoT & Methodologies</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-tag">Random Forest</span>
+            <span class="tech-tag">Time-Series Resampling</span>
+            <span class="tech-tag">Scikit-Learn</span>
+            <span class="tech-tag">ESP32 & PZEM Sensor</span>
+            <span class="tech-tag">Edge Computing (EMA)</span>
+            <span class="tech-tag">UML & System Modeling</span>
+            <span class="tech-tag">Technical Writing</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- EXPERIENCE & EDUCATION JOURNEY -->
+    <!-- ========================================== -->
+    <section id="experience" class="space-y-8">
+      <div>
+        <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest font-semibold">Rekam Jejak Profesional & Akademik</div>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Experience & Education</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+
+        <!-- Work Experience Timeline -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <i data-lucide="briefcase" class="w-5 h-5 text-cyan-400"></i>
+            <span>Pengalaman Kerja & Kepanitiaan</span>
+          </h3>
+
+          <div class="space-y-4 border-l border-white/10 pl-5 ml-2.5">
+            
+            <!-- Item 1: BPR Magang -->
+            <div class="relative group">
+              <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-cyan-400 ring-4 ring-[#090a0f]"></span>
+              <div class="bento-card p-5 space-y-2">
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400">
+                  <span class="font-semibold text-white">PT BPR Adiartha Reksacitra</span>
+                  <span class="font-mono text-cyan-400">Juli 2025 – Des 2025</span>
+                </div>
+                <div class="text-sm font-bold text-cyan-300">Mobile App Developer Intern</div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Mengembangkan sistem absensi mobile perbankan dengan Flutter & Firebase, validasi lokasi GPS Geofencing, deteksi selfie kamera, serta menyusun buku panduan 300+ halaman.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2: Play IT 2024 -->
+            <div class="relative group">
+              <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-emerald-400 ring-4 ring-[#090a0f]"></span>
+              <div class="bento-card p-5 space-y-2">
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400">
+                  <span class="font-semibold text-white">Kompetisi Nasional Play IT 2024</span>
+                  <span class="font-mono text-emerald-400">Nov 2024</span>
+                </div>
+                <div class="text-sm font-bold text-emerald-300">Panitia Workshop & Panitia Expo</div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Mengelola kelancaran hands-on workshop laboratorium, mendampingi pemateri industri, troubleshooting kendala teknis peserta, serta mengoordinasikan stan pameran inovasi IT.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education & Certifications Timeline -->
+        <div class="space-y-6">
+          <h3 class="text-lg font-bold text-white flex items-center gap-2">
+            <i data-lucide="graduation-cap" class="w-5 h-5 text-purple-400"></i>
+            <span>Pendidikan & Sertifikasi</span>
+          </h3>
+
+          <div class="space-y-4 border-l border-white/10 pl-5 ml-2.5">
+
+            <!-- Item 1: Polinema -->
+            <div class="relative group">
+              <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-purple-400 ring-4 ring-[#090a0f]"></span>
+              <div class="bento-card p-5 space-y-2">
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400">
+                  <span class="font-semibold text-white">Politeknik Negeri Malang</span>
+                  <span class="font-mono text-purple-400">2022 – 2026</span>
+                </div>
+                <div class="text-sm font-bold text-purple-300">D-IV Teknik Informatika (S.Tr.Kom) • IPK 3.54</div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Fokus pada Rekayasa Perangkat Lunak, IoT Real-Time Systems, dan Machine Learning. Menyelesaikan Tugas Akhir rancang bangun sistem monitoring arus transformator berbasis microservices.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2: SMAN 1 Talun -->
+            <div class="relative group">
+              <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-amber-400 ring-4 ring-[#090a0f]"></span>
+              <div class="bento-card p-5 space-y-2">
+                <div class="flex flex-wrap items-center justify-between text-xs text-slate-400">
+                  <span class="font-semibold text-white">SMAN 1 Talun, Blitar</span>
+                  <span class="font-mono text-amber-400">2019 – 2021</span>
+                </div>
+                <div class="text-sm font-bold text-amber-300">Program Kelas Akselerasi MIPA (Lulus 2 Tahun)</div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Menyelesaikan kurikulum intensif 3 tahun menjadi 2 tahun dengan nilai 89.87. Aktif dalam Kelompok Ilmiah Remaja (KIR), Olimpiade Sains, dan English Club.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3: Certifications Highlights -->
+            <div class="relative group">
+              <span class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-cyan-400 ring-4 ring-[#090a0f]"></span>
+              <div class="bento-card p-5 space-y-2">
+                <div class="text-xs font-semibold text-white">Sertifikasi & Pelatihan Terverifikasi</div>
+                <div class="flex flex-wrap gap-1.5 pt-1 text-xs">
+                  <span class="tech-tag">TOEIC (ETS Score)</span>
+                  <span class="tech-tag">Pemrograman C (Dicoding)</span>
+                  <span class="tech-tag">Pemrograman Java (Dicoding)</span>
+                  <span class="tech-tag">Leadership & Public Speaking</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CONTACT & FOOTER -->
+    <!-- ========================================== -->
+    <section id="contact" class="bento-card p-8 sm:p-12 text-center relative overflow-hidden bg-gradient-to-b from-[#0f1420] to-[#090a0f]">
+      <div class="max-w-2xl mx-auto space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono">
+          Mari Terhubung & Berkolaborasi
+        </div>
+
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+          Tertarik Berkolaborasi?
+        </h2>
+
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          Saya terbuka untuk peluang kerja penuh waktu (*Full-Time*), posisi *Software Engineering*, *Data Analyst*, maupun program magang riset (seperti BRIN / BUMN). Jangan ragu untuk menghubungi saya!
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <a href="mailto:septapuma@gmail.com" class="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-emerald-500 hover:opacity-95 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-cyan-500/25 flex items-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4"></i>
+            <span>Kirim Email Langsung</span>
+          </a>
+          <a href="https://wa.me/6281357878291" target="_blank" class="px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold text-sm transition-all flex items-center gap-2">
+            <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i>
+            <span>WhatsApp (+62 813-5787-8291)</span>
+          </a>
+          <a href="https://www.linkedin.com/in/septapumasurya/" target="_blank" class="px-6 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-semibold text-sm transition-all flex items-center gap-2">
+            <i data-lucide="linkedin" class="w-4 h-4 text-cyan-400"></i>
+            <span>LinkedIn Profile</span>
+          </a>
+        </div>
+
+        <div class="pt-10 text-xs text-slate-500 font-mono border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-2">
+          <span>&copy; 2026 Septa Puma Surya, S.Tr.Kom. All rights reserved.</span>
+          <span>Hosted on GitHub Pages (rollinpumpkin.github.io)</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div id="toast">Notifikasi</div>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+  
+  <!-- Interactive Script -->
+  <script src="app.js"></script>
+</body>
+</html>
