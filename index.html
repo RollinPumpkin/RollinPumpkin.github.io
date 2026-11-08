@@ -184,7 +184,7 @@
             </h3>
 
             <p class="text-slate-300 text-sm leading-relaxed">
-              Arsitektur terpisah antara antarmuka web modern dengan layanan kecerdasan buatan. Mengalirkan data 9 kanal sensor kelistrikan secara real-time via WebSocket dengan latensi ~85 ms dan zero packet loss. Dilengkapi model Random Forest untuk peramalan deret waktu 24 jam (12-hour sliding window) serta rekomendasi mitigasi fisik otomatis guna mencegah loncatan api (*flashover*).
+              Sistem ini dirancang dengan pemisahan antarmuka web dan layanan Model Machine Learning agar keduanya dapat dikembangkan secara independen. Data dari 9 kanal sensor kelistrikan dikirim secara real-time lewat WebSocket dengan latensi ~85 ms tanpa packet loss. Model Random Forest dipakai untuk meramalkan kondisi jaringan 24 jam ke depan menggunakan sliding window 12 jam, sekaligus memberi rekomendasi mitigasi fisik untuk mencegah terjadinya loncatan api (<em>flashover</em>).
             </p>
 
             <!-- Metrics Grid -->
