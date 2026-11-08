@@ -104,12 +104,10 @@
   <!-- ========================================== -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 relative z-10 space-y-16">
 
-    <!-- HERO SECTION & BENTO OVERVIEW -->
-    <section id="about" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-      
-      <!-- Main Intro Card (Col 8) -->
-      <div class="lg:col-span-8 bento-card p-8 sm:p-10 flex flex-col justify-between relative">
-        <div class="space-y-6">
+    <!-- HERO SECTION -->
+    <section id="about" class="w-full">
+      <div class="bento-card p-8 sm:p-12 relative overflow-hidden">
+        <div class="max-w-4xl space-y-6">
           <div class="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono">
             <span class="pulse-dot"></span>
             <span>Available for Software Engineering & Data Roles</span>
@@ -124,76 +122,26 @@
             </p>
           </div>
 
-          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-            Software Engineer & periset sistem cerdas yang mengintegrasikan rekayasa <span class="text-cyan-400 font-semibold">Full-Stack Web & Mobile modern</span> dengan aliran data waktu nyata <span class="text-emerald-400 font-semibold">Internet of Things (IoT)</span> dan permodelan prediktif <span class="text-purple-400 font-semibold">Machine Learning</span>. Terbiasa memimpin perancangan sistem secara menyeluruh dari analisis kebutuhan stakeholder hingga implementasi produksi.
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            Software Engineer yang berfokus pada rekayasa <span class="text-cyan-400 font-semibold">Full-Stack Web & Mobile modern</span>, integrasi data waktu nyata <span class="text-emerald-400 font-semibold">Internet of Things (IoT)</span>, dan penerapan <span class="text-purple-400 font-semibold">Machine Learning</span>. Berpengalaman dalam merancang arsitektur sistem dari pemetaan kebutuhan pengguna hingga implementasi siap pakai.
           </p>
-        </div>
 
-        <div class="pt-8 flex flex-wrap items-center gap-4">
-          <a href="#projects" class="px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-sm transition-all flex items-center gap-2 shadow-lg shadow-cyan-500/25">
-            <span>Jelajahi Proyek</span>
-            <i data-lucide="arrow-right" class="w-4 h-4"></i>
-          </a>
-          <button id="copyEmailBtn" class="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 font-medium text-sm transition-all flex items-center gap-2">
-            <i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i>
-            <span>Salin Email</span>
-          </button>
-          <a href="https://github.com/RollinPumpkin" target="_blank" class="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 font-medium text-sm transition-all flex items-center gap-2">
-            <i data-lucide="github" class="w-4 h-4 text-slate-400"></i>
-            <span>GitHub Profile</span>
-          </a>
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            <a href="#projects" class="px-5 py-2.5 rounded-xl bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold text-sm transition-all flex items-center gap-2 shadow-lg shadow-cyan-500/25">
+              <span>Jelajahi Proyek</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <button id="copyEmailBtn" class="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 font-medium text-sm transition-all flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i>
+              <span>Salin Email</span>
+            </button>
+            <a href="https://github.com/RollinPumpkin" target="_blank" class="px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-slate-200 font-medium text-sm transition-all flex items-center gap-2">
+              <i data-lucide="github" class="w-4 h-4 text-slate-400"></i>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
         </div>
       </div>
-
-      <!-- Quick Stats & Highlights (Col 4) -->
-      <div class="lg:col-span-4 grid grid-cols-2 lg:grid-cols-1 gap-6">
-        
-        <!-- Stat Card 1 -->
-        <div class="bento-card p-6 flex items-center gap-4">
-          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0">
-            <i data-lucide="zap" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <div class="text-2xl sm:text-3xl font-mono font-bold text-white">~85 ms</div>
-            <div class="text-xs text-slate-400">End-to-End WebSocket Latency</div>
-          </div>
-        </div>
-
-        <!-- Stat Card 2 -->
-        <div class="bento-card p-6 flex items-center gap-4">
-          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0">
-            <i data-lucide="activity" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <div class="text-2xl sm:text-3xl font-mono font-bold text-white">9 Kanal</div>
-            <div class="text-xs text-slate-400">Sensor Telemetri Simultan</div>
-          </div>
-        </div>
-
-        <!-- Stat Card 3 -->
-        <div class="bento-card p-6 flex items-center gap-4">
-          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
-            <i data-lucide="award" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <div class="text-2xl sm:text-3xl font-mono font-bold text-white">3.54 / 4.0</div>
-            <div class="text-xs text-slate-400">IPK Kelulusan Polinema</div>
-          </div>
-        </div>
-
-        <!-- Stat Card 4 -->
-        <div class="bento-card p-6 flex items-center gap-4">
-          <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
-            <i data-lucide="clock" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <div class="text-2xl sm:text-3xl font-mono font-bold text-white">2 Tahun</div>
-            <div class="text-xs text-slate-400">Akselerasi SMA (SMAN 1 Talun)</div>
-          </div>
-        </div>
-
-      </div>
-
     </section>
 
     <!-- ========================================== -->
